@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="朱毅的非线性动力系统与科学发现研究：FLARE 与 FLARE-T，从高维响应识别受迫低维动力学并应用于场地响应预测。">
+  <title>非线性动力系统建模与科学发现 · 朱毅</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23102b54'/%3E%3Cpath d='M14 18h36L26 46h24' fill='none' stroke='%2332b6ca' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./site.js" defer></script>
+</head>
+<body data-title-zh="非线性动力系统建模与科学发现 · 朱毅" data-title-en="Nonlinear Dynamical Systems & Scientific Discovery · Yi Zhu">
+  <a class="skip-link" href="#main"><span class="lang zh">跳至主要内容</span><span class="lang en">Skip to content</span></a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="./index.html"><span class="brand-mark">YZ</span><span>朱毅 · Yi Zhu</span></a>
+      <div class="nav-actions">
+        <div class="nav-links">
+          <a href="./constitutive.html"><span class="lang zh">本构建模</span><span class="lang en">Constitutive AI</span></a>
+          <a href="./dynamics.html"><span class="lang zh">动力系统</span><span class="lang en">Dynamics</span></a>
+          <a href="mailto:zhuyibjut@163.com"><span class="lang zh">联系</span><span class="lang en">Contact</span></a>
+        </div>
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="zh" aria-pressed="true">中</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="page-hero">
+      <a class="back-link" href="./index.html">← <span class="lang zh">返回主页</span><span class="lang en">Back to home</span></a>
+      <div class="page-kicker">RESEARCH PROGRAM 02</div>
+      <h1><span class="lang zh">非线性动力系统建模<br>与科学发现</span><span class="lang en">Nonlinear Dynamical Systems<br>& Scientific Discovery</span></h1>
+      <p>
+        <span class="lang lang-block zh">许多受迫物理系统只有高维响应可以观测，而真正控制其演化的状态与方程隐藏在数据之中。这条研究主线以 FLARE 为核心，联合学习低维响应坐标、受外部输入驱动的稀疏演化方程与高维重构映射；进一步通过 FLARE-T 将数值模拟中学到的动力学迁移到稀疏实测数据，以服务于场地响应预测。</span>
+        <span class="lang lang-block en">Many forced physical systems are observed only through high-dimensional responses, while the states and equations governing their evolution remain hidden. Centered on FLARE, this program jointly learns low-dimensional response coordinates, sparse evolution equations driven by external inputs, and a reconstruction map to full observations. FLARE-T then transfers simulation-learned dynamics to sparse measurements for seismic site-response prediction.</span>
+      </p>
+
+      <div class="module-map" aria-label="Research modules">
+        <div class="module">
+          <span class="module-number">MODULE 01</span>
+          <h2><span class="lang zh">潜在状态学习</span><span class="lang en">Latent State Learning</span></h2>
+          <p><span class="lang zh">从响应历史而非单一时刻估计能够表征系统演化的低维状态。</span><span class="lang en">Estimating low-dimensional dynamic states from response histories rather than isolated snapshots.</span></p>
+        </div>
+        <div class="module">
+          <span class="module-number">MODULE 02</span>
+          <h2><span class="lang zh">受迫方程发现</span><span class="lang en">Forced Equation Discovery</span></h2>
+          <p><span class="lang zh">显式分离系统状态与外部输入，识别可积分、可解释的稀疏潜在动力学。</span><span class="lang en">Separating system state from external forcing to identify sparse, interpretable, integrable dynamics.</span></p>
+        </div>
+        <div class="module">
+          <span class="module-number">MODULE 03</span>
+          <h2><span class="lang zh">跨域迁移</span><span class="lang en">Cross-Domain Transfer</span></h2>
+          <p><span class="lang zh">将有限元密集响应中的动力学结构迁移到稀疏传感器与有限实测记录。</span><span class="lang en">Transferring dynamic structure from dense finite-element responses to sparse sensors and limited records.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-section" aria-labelledby="works-title">
+      <h2 class="works-heading" id="works-title"><span class="lang zh">代表工作</span><span class="lang en">Selected Work</span></h2>
+      <div class="paper-list">
+        <article class="paper-card">
+          <figure class="paper-figure"><img src="./assets/flare.png" alt="FLARE framework architecture"></figure>
+          <div class="paper-content">
+            <div class="paper-meta"><span>FLARE</span><span>·</span><span>arXiv · 2026</span></div>
+            <h2>Discovering Latent Response Laws in Forced Physical Systems</h2>
+            <p class="paper-authors"><strong>Yi Zhu</strong>, Su Chen, Xiaojun Li, Xiuli Du</p>
+            <p class="paper-summary"><span class="lang zh">提出 Forced Latent Autoencoder for Response Equations：从高维时序或视频响应中学习紧凑状态，识别包含外部输入的稀疏潜在方程，并通过方程积分重构长时程高维响应。该框架面向未知有效状态、复杂观测与未见输入下的可解释预测。</span><span class="lang en">Introduces the Forced Latent Autoencoder for Response Equations: it learns compact states from high-dimensional time series or video, identifies sparse latent equations with external forcing, and reconstructs long-horizon responses from equation rollouts under unseen inputs.</span></p>
+            <a class="paper-link" href="https://arxiv.org/abs/2607.09801" target="_blank" rel="noreferrer"><span class="lang zh">查看预印本</span><span class="lang en">View preprint</span> ↗</a>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <figure class="paper-figure"><img src="./assets/flare-t.png" alt="FLARE-T transfer architecture for seismic site response"></figure>
+          <div class="paper-content">
+            <div class="paper-meta"><span>FLARE-T</span><span>·</span><span>arXiv · 2026</span></div>
+            <h2>Seismic Site Response Prediction from Sparse Observations Using Finite-Element-Pretrained Latent Dynamics</h2>
+            <p class="paper-authors"><strong>Yi Zhu</strong>, Su Chen*, Xiaojun Li</p>
+            <p class="paper-summary"><span class="lang zh">提出可迁移的 FLARE-T：先从有限元密集响应预训练潜在流形与受迫动力学，再将稀疏传感器编码到同一坐标系，最后用少量实测记录校正方程系数。该方法用于离心模型与罗东场地的多深度地震响应预测。</span><span class="lang en">Introduces FLARE-T: latent manifolds and forced dynamics are pretrained on dense finite-element responses, sparse sensors are mapped into the same coordinates, and equation coefficients are calibrated with limited records. The method is evaluated on centrifuge and Lotung multi-depth site responses.</span></p>
+            <a class="paper-link" href="https://arxiv.org/abs/2609.20451" target="_blank" rel="noreferrer"><span class="lang zh">查看预印本</span><span class="lang en">View preprint</span> ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><div class="footer-name">朱毅 · Yi Zhu</div><p><span class="lang zh">机器学习 · 力学 · 科学发现</span><span class="lang en">Machine Learning · Mechanics · Scientific Discovery</span></p></div>
+      <div class="footer-links"><a href="./index.html"><span class="lang zh">主页</span><span class="lang en">Home</span></a><a href="./constitutive.html"><span class="lang zh">岩土本构建模</span><span class="lang en">Constitutive Modeling</span></a><a href="mailto:zhuyibjut@163.com">Email</a></div>
+    </div>
+  </footer>
+</body>
+</html>

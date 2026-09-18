@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="朱毅的机器学习岩土本构建模研究：物理引导符号回归、热力学约束神经建模与神经符号热力学建模。">
+  <title>机器学习驱动的岩土本构建模 · 朱毅</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23102b54'/%3E%3Cpath d='M14 18h36L26 46h24' fill='none' stroke='%2332b6ca' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./site.js" defer></script>
+</head>
+<body data-title-zh="机器学习驱动的岩土本构建模 · 朱毅" data-title-en="Machine Learning for Geotechnical Constitutive Modeling · Yi Zhu">
+  <a class="skip-link" href="#main"><span class="lang zh">跳至主要内容</span><span class="lang en">Skip to content</span></a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="./index.html"><span class="brand-mark">YZ</span><span>朱毅 · Yi Zhu</span></a>
+      <div class="nav-actions">
+        <div class="nav-links">
+          <a href="./constitutive.html"><span class="lang zh">本构建模</span><span class="lang en">Constitutive AI</span></a>
+          <a href="./dynamics.html"><span class="lang zh">动力系统</span><span class="lang en">Dynamics</span></a>
+          <a href="mailto:zhuyibjut@163.com"><span class="lang zh">联系</span><span class="lang en">Contact</span></a>
+        </div>
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="zh" aria-pressed="true">中</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="page-hero">
+      <a class="back-link" href="./index.html">← <span class="lang zh">返回主页</span><span class="lang en">Back to home</span></a>
+      <div class="page-kicker">RESEARCH PROGRAM 01</div>
+      <h1><span class="lang zh">机器学习驱动的<br>岩土本构建模</span><span class="lang en">Machine Learning for<br>Geotechnical Constitutive Modeling</span></h1>
+      <p>
+        <span class="lang lang-block zh">这条研究主线旨在从数据中构建兼具准确性、物理一致性与可解释性的岩土本构模型。研究从物理引导的符号本构发现出发，进一步引入先验模型与热力学约束，并将神经表示和符号表达结合，最终面向土体循环响应与液化孔压演化等问题形成可计算的显式规律。</span>
+        <span class="lang lang-block en">This research program develops data-driven constitutive models that combine accuracy, physical consistency, and interpretability. Beginning with physics-guided symbolic discovery, it incorporates prior constitutive knowledge and thermodynamic constraints, integrates neural representations with symbolic expressions, and applies the resulting methods to cyclic soil response and excess pore-water-pressure evolution during liquefaction.</span>
+      </p>
+
+      <div class="module-map" aria-label="Research modules">
+        <div class="module">
+          <span class="module-number">MODULE 01</span>
+          <h2><span class="lang zh">符号本构发现</span><span class="lang en">Symbolic Constitutive Discovery</span></h2>
+          <p><span class="lang zh">以物理量、量纲关系、力学约束与先验模型共同缩减方程搜索空间。</span><span class="lang en">Using variables, dimensions, mechanics, and prior models to constrain the equation search space.</span></p>
+        </div>
+        <div class="module">
+          <span class="module-number">MODULE 02</span>
+          <h2><span class="lang zh">热力学融合</span><span class="lang en">Thermodynamic Integration</span></h2>
+          <p><span class="lang zh">通过 Re-TINN 与 NSTM 将热力学一致性、神经近似和显式符号规律连接起来。</span><span class="lang en">Connecting thermodynamic consistency, neural approximation, and explicit laws through Re-TINN and NSTM.</span></p>
+        </div>
+        <div class="module">
+          <span class="module-number">MODULE 03</span>
+          <h2><span class="lang zh">工程应用</span><span class="lang en">Engineering Application</span></h2>
+          <p><span class="lang zh">从循环荷载数据中发现液化过程中超孔隙水压力的可解释演化模型。</span><span class="lang en">Discovering interpretable excess pore-water-pressure evolution laws from cyclic loading data.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-section" aria-labelledby="works-title">
+      <h2 class="works-heading" id="works-title"><span class="lang zh">代表工作</span><span class="lang en">Selected Work</span></h2>
+      <div class="paper-list">
+        <article class="paper-card">
+          <figure class="paper-figure"><img src="./assets/phgsr-clay.png" alt="Physics-guided symbolic regression for clay constitutive modeling"></figure>
+          <div class="paper-content">
+            <div class="paper-meta"><span>PHG-SR</span><span>·</span><span>Engineering Applications of Artificial Intelligence · 2026</span></div>
+            <h2>Discovering constitutive models for clay through physics-guided symbolic regression</h2>
+            <p class="paper-authors">Su Chen, <strong>Yi Zhu</strong>, Suyang Wang, Guosheng Wang, Xiaojun Li</p>
+            <p class="paper-summary"><span class="lang zh">将量纲一致性、力学边界、基本形式与运算约束嵌入符号回归，在较少数据下发现简洁且具有物理意义的黏土本构方程。</span><span class="lang en">Embeds dimensional consistency, mechanical boundaries, basic forms, and operator constraints into symbolic regression to discover concise, physically meaningful clay constitutive equations from limited data.</span></p>
+            <a class="paper-link" href="https://doi.org/10.1016/j.engappai.2026.114759" target="_blank" rel="noreferrer"><span class="lang zh">查看论文</span><span class="lang en">View paper</span> ↗</a>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <figure class="paper-figure"><img src="./assets/kb-phgsr.png" alt="Knowledge-based physics-guided symbolic regression for sand"></figure>
+          <div class="paper-content">
+            <div class="paper-meta"><span>KB-phgSR</span><span>·</span><span>Canadian Geotechnical Journal · 2025</span></div>
+            <h2>A physics-guided symbolic regression framework for efficient and interpretable sand constitutive modeling</h2>
+            <p class="paper-authors"><strong>Yi Zhu</strong>, Su Chen, Xiaojun Li</p>
+            <p class="paper-summary"><span class="lang zh">以经典本构模型生成物理一致的初始解，再利用试验数据优化 Pareto 前沿；将“先验知识”转化为可搜索、可修正的符号表达。</span><span class="lang en">Uses classical constitutive models to generate physically consistent initial solutions, then refines the Pareto front with experiments—turning prior knowledge into searchable and correctable symbolic expressions.</span></p>
+            <a class="paper-link" href="https://doi.org/10.1139/cgj-2025-0201" target="_blank" rel="noreferrer"><span class="lang zh">查看论文</span><span class="lang en">View paper</span> ↗</a>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <figure class="paper-figure"><img src="./assets/re-tinn.png" alt="Reverse thermodynamics-informed neural network architecture"></figure>
+          <div class="paper-content">
+            <div class="paper-meta"><span>Re-TINN</span><span>·</span><span>Theoretical and Applied Mechanics Letters · 2026</span></div>
+            <h2>Thermodynamic-constrained neural modeling for path-dependent geomaterials via dynamic skeleton states</h2>
+            <p class="paper-authors"><strong>Yi Zhu</strong>, Su Chen, Xiaojun Li</p>
+            <p class="paper-summary"><span class="lang zh">提出逆向热力学神经网络，以应力为主要预测输出，并引入动态参考状态表征土体结构演化，从而在缺少自由能与耗散率标签时仍可施加热力学约束。</span><span class="lang en">Introduces a reverse thermodynamics-informed neural network that predicts stress directly and uses dynamic reference states to represent fabric evolution, enforcing thermodynamic constraints without free-energy or dissipation labels.</span></p>
+            <a class="paper-link" href="https://doi.org/10.1016/j.taml.2026.100740" target="_blank" rel="noreferrer"><span class="lang zh">查看论文</span><span class="lang en">View paper</span> ↗</a>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <figure class="paper-figure"><img src="./assets/nstm.png" alt="Neural-symbolic thermodynamic modeler"></figure>
+          <div class="paper-content">
+            <div class="paper-meta"><span>NSTM</span><span>·</span><span>Acta Geotechnica · 2026</span></div>
+            <h2>A neural-symbolic thermodynamic framework for explicit constitutive modeling of geomaterials</h2>
+            <p class="paper-authors"><strong>Yi Zhu</strong>, Su Chen, Xiaojun Li</p>
+            <p class="paper-summary"><span class="lang zh">将热力学信息神经网络与物理引导符号回归闭环结合，交替更新自由能和耗散率的数值表示与显式表达，形成神经符号热力学建模器。</span><span class="lang en">Couples thermodynamics-informed neural networks with physics-guided symbolic regression in a closed loop, alternating between numerical representations and explicit expressions for free energy and dissipation.</span></p>
+            <a class="paper-link" href="https://doi.org/10.1007/s11440-026-03069-4" target="_blank" rel="noreferrer"><span class="lang zh">查看论文</span><span class="lang en">View paper</span> ↗</a>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <figure class="paper-figure"><img src="./assets/pore-pressure.png" alt="Thermodynamics-informed pore-water-pressure equation discovery"></figure>
+          <div class="paper-content">
+            <div class="paper-meta"><span>LIQUEFACTION MODEL</span><span>·</span><span>Soil Dynamics and Earthquake Engineering</span><span class="status"><span class="lang zh">审稿中</span><span class="lang en">Under Review</span></span></div>
+            <h2>Thermodynamics-informed discovery of excess pore water pressure evolution in saturated soils</h2>
+            <p class="paper-authors"><strong>Yi Zhu</strong>, Su Chen*, Xiaojun Li</p>
+            <p class="paper-summary"><span class="lang zh">将神经热力学表示与符号发现用于液化问题，从循环响应中提取饱和土超孔隙水压力的显式演化规律，检验方法从本构建模走向工程现象发现的能力。</span><span class="lang en">Applies neural thermodynamic representations and symbolic discovery to liquefaction, extracting an explicit evolution law for excess pore-water pressure in saturated soils from cyclic response data.</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><div class="footer-name">朱毅 · Yi Zhu</div><p><span class="lang zh">机器学习 · 力学 · 科学发现</span><span class="lang en">Machine Learning · Mechanics · Scientific Discovery</span></p></div>
+      <div class="footer-links"><a href="./index.html"><span class="lang zh">主页</span><span class="lang en">Home</span></a><a href="./dynamics.html"><span class="lang zh">非线性动力系统</span><span class="lang en">Nonlinear Dynamics</span></a><a href="mailto:zhuyibjut@163.com">Email</a></div>
+    </div>
+  </footer>
+</body>
+</html>
